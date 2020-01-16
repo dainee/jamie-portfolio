@@ -5960,175 +5960,26 @@ ol {
       .footer__social a:last-child {
         margin-right: 0; }
 
-.portfolio-filters * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-.portfolio-filters body {
-  margin: 0;
+.portfolio-filters ul {
+  margin-left: initial;
+  text-indent: initial;
   padding: 0; }
+  .portfolio-filters ul li:before {
+    display: none; }
 
-.portfolio-filters .hide {
-  -webkit-animation: fadeOut 150ms ease;
-  animation: fadeOut 150ms ease;
-  opacity: 0; }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-.portfolio-filters .hide {
-  display: none; }
-
-.portfolio-filters #controls {
-  margin-bottom: 2rem; }
-
-.portfolio-filters #controls ul {
-  list-style: none;
-  padding: 1rem;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.portfolio-filters #controls ul li {
-  margin: 0;
-  padding: 0.5rem;
-  border: 1px solid #eee;
+.portfolio-filters__filter {
+  display: inline-block;
+  margin-right: 1.25rem;
   cursor: pointer; }
+  .portfolio-filters__filter:last-child {
+    margin-right: 0; }
 
-.portfolio-filters #controls ul li:hover {
-  background: #eee; }
+.portfolio-filters__image {
+  margin-bottom: 0.9375rem;
+  border: 0; }
 
-@media (min-width: 400px) {
-  .portfolio-filters #controls ul li {
-    margin-right: 1rem;
-    padding: 1rem; } }
-
-.portfolio-filters #controls ul .active {
-  background: #444;
-  color: white; }
-
-.portfolio-filters #controls ul .active:hover {
-  color: #444; }
-
-.portfolio-filters .grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 1rem;
-  justify-items: center;
-  margin: 1rem; }
-
-@media (min-width: 500px) {
-  .portfolio-filters .grid-wrapper {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media (min-width: 768px) {
-  .portfolio-filters .grid-wrapper {
-    grid-template-columns: repeat(3, 1fr); } }
-
-@media (min-width: 1368px) {
-  .portfolio-filters .grid-wrapper {
-    grid-template-columns: repeat(4, 1fr); } }
-
-.portfolio-filters .image {
-  width: 100%;
-  height: 50vh; }
-
-@media (min-width: 500px) {
-  .portfolio-filters .image {
-    width: 100%;
-    height: 50vw; } }
-
-@media (min-width: 768px) {
-  .portfolio-filters .image {
-    width: 100%;
-    height: 40vw; } }
-
-@media (min-width: 1368px) {
-  .portfolio-filters .image {
-    width: 100%;
-    height: 20vw; } }
-
-.portfolio-filters .urban-1 {
-  background: url(https://unsplash.it/1500?image=1075);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio-filters .urban-2 {
-  background: url(https://unsplash.it/1500?image=1067);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio-filters .urban-3 {
-  background: url(https://unsplash.it/1500?image=1033);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio-filters .urban-4 {
-  background: url(https://unsplash.it/1500?image=983);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio-filters .landscape-1 {
-  background: url(https://unsplash.it/1500?image=961);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio-filters .landscape-2 {
-  background: url(https://unsplash.it/1500?image=916);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio-filters .landscape-3 {
-  background: url(https://unsplash.it/1500?image=901);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio-filters .landscape-4 {
-  background: url(https://unsplash.it/1500?image=876);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio-filters .portrait-1 {
-  background: url(https://unsplash.it/1500?image=978);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio-filters .portrait-2 {
-  background: url(https://unsplash.it/1500?image=996);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio-filters .portrait-3 {
-  background: url(https://unsplash.it/1500?image=1027);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio-filters .portrait-4 {
-  background: url(https://unsplash.it/1500?image=838);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+.portfolio-filters .hide {
+  display: none;
+  opacity: 0; }
 
 /*# sourceMappingURL=small.min.css.map */

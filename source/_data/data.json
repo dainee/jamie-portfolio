@@ -187,6 +187,71 @@
 		]
 	},
 	"portfolioFilters": {
-		"text": "Hello World, from 00-portfolio-filters."
+		"text": "Hello World, from 00-portfolio-filters.",
+		"filterList": [
+			{
+				"active": true,
+				"all": true,
+				"filterOne": false,
+				"filterTwo": false,
+				"menu": "All"
+			},
+			{
+				"active": false,
+				"all": false,
+				"filterOne": true,
+				"filterTwo": false,
+				"menu": "UI/UX"
+			},
+			{
+				"active": false,
+				"all": false,
+				"filterOne": false,
+				"filterTwo": true,
+				"menu": "Others"
+			}
+		],
+		"imageCard": [
+			{
+				"imgClass": "one",
+				"imgSrc": "https://unsplash.it/600/400?random",
+				"name": "Portfolio 1"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "https://unsplash.it/600/600?random",
+				"name": "Portfolio 2"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "https://unsplash.it/600/500?random",
+				"name": "Portfolio 3"
+			},
+			{
+				"imgClass": "one",
+				"imgSrc": "https://unsplash.it/800/400?random",
+				"name": "Portfolio 4"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "https://unsplash.it/480/700?random",
+				"name": "Portfolio 5"
+			},
+			{
+				"imgClass": "one",
+				"imgSrc": "https://unsplash.it/680/420?random",
+				"name": "Portfolio 6"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "https://unsplash.it/740/480?random",
+				"name": "Portfolio 7"
+			},
+			{
+				"imgClass": "one",
+				"imgSrc": "https://unsplash.it/800/500?random",
+				"name": "Portfolio 8"
+			}
+		]
 	}
 }

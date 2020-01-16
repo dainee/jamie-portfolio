@@ -22,4 +22,35 @@
     .footer__social a {
       margin-right: 1.25rem; }
 
+.portfolio-filters__filter {
+  margin-right: 2.5rem; }
+
+.portfolio-filters__image {
+  position: relative;
+  margin-bottom: 1.25rem; }
+  .portfolio-filters__image span {
+    position: absolute;
+    top: 0.625rem;
+    left: 0.9375rem;
+    display: none;
+    color: #fff;
+    z-index: 1; }
+  .portfolio-filters__image:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    background: rgba(0, 0, 0, 0.35);
+    content: '';
+    opacity: 0; }
+  .portfolio-filters__image:hover:after, .portfolio-filters__image:active:after, .portfolio-filters__image:focus:after {
+    opacity: 1; }
+  .portfolio-filters__image:hover span, .portfolio-filters__image:active span, .portfolio-filters__image:focus span {
+    display: block; }
+
 /*# sourceMappingURL=medium.min.css.map */

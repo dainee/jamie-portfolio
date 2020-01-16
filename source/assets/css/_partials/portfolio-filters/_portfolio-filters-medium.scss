@@ -1,3 +1,46 @@
 $block: 'portfolio-filters';
-// sass-lint:disable no-empty-rulesets
-.#{$block} {}
+
+.#{$block} {
+	&__filter {
+		margin-right: rem-calc(40);
+	}
+
+	&__image {
+		position: relative;
+		margin-bottom: rem-calc(20);
+
+		span {
+			position: absolute;
+			top: rem-calc(10);
+			left: rem-calc(15);
+			display: none;
+			color: $color-white;
+			z-index: 1;
+		}
+
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			transition: all .25s;
+			background: $color-black-transparent;
+			content: '';
+			opacity: 0;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			&:after {
+				opacity: 1;
+			}
+
+			span {
+				display: block;
+			}
+		}
+	}
+}
