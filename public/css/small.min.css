@@ -5963,20 +5963,35 @@ ol {
 .portfolio-filters ul {
   margin-left: initial;
   text-indent: initial;
-  padding: 0; }
+  margin-bottom: 1.25rem;
+  padding: 0;
+  text-align: center; }
   .portfolio-filters ul li:before {
     display: none; }
 
 .portfolio-filters__filter {
   display: inline-block;
   margin-right: 1.25rem;
+  color: #9b9b9b;
+  font-size: 1.125rem;
+  font-weight: 500;
   cursor: pointer; }
   .portfolio-filters__filter:last-child {
     margin-right: 0; }
+  .portfolio-filters__filter.active {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    color: #000; }
 
 .portfolio-filters__image {
-  margin-bottom: 0.9375rem;
   border: 0; }
+  .portfolio-filters__image span {
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 500; }
+  .portfolio-filters__image:hover, .portfolio-filters__image:active, .portfolio-filters__image:focus {
+    text-decoration: none; }
 
 .portfolio-filters .hide {
   display: none;

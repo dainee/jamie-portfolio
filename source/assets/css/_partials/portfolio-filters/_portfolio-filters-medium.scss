@@ -1,13 +1,17 @@
 $block: 'portfolio-filters';
 
 .#{$block} {
+	ul {
+		margin-bottom: rem-calc(40);
+		text-align: left;
+	}
+
 	&__filter {
 		margin-right: rem-calc(40);
 	}
 
 	&__image {
 		position: relative;
-		margin-bottom: rem-calc(20);
 
 		span {
 			position: absolute;
@@ -25,7 +29,7 @@ $block: 'portfolio-filters';
 			display: block;
 			width: 100%;
 			height: 100%;
-			transition: all .25s;
+			transition: all .3s;
 			background: $color-black-transparent;
 			content: '';
 			opacity: 0;
@@ -42,5 +46,9 @@ $block: 'portfolio-filters';
 				display: block;
 			}
 		}
+	}
+
+	.card {
+		margin-bottom: rem-calc(20);
 	}
 }

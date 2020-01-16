@@ -3,22 +3,43 @@ $block: 'portfolio-filters';
 .#{$block} {
 	ul {
 		@include no-custom-bullets;
+		margin-bottom: rem-calc(20);
 		padding: 0;
+		text-align: center;
 	}
 
 	&__filter {
 		display: inline-block;
 		margin-right: rem-calc(20);
+		color: $color-gray;
+		font-size: fs(normal);
+		font-weight: map-get($font-weights-primary, bold);
 		cursor: pointer;
 
 		&:last-child {
 			margin-right: 0;
 		}
+
+		&.active {
+			transition: all .3s;
+			color: $color-black;
+		}
 	}
 
 	&__image {
-		margin-bottom: rem-calc(15);
 		border: 0;
+
+		span {
+			color: $color-black;
+			font-size: fs(normal);
+			font-weight: map-get($font-weights-primary, bold);
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+		}
 	}
 
 	.hide {

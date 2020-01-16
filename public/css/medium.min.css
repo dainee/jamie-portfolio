@@ -22,12 +22,15 @@
     .footer__social a {
       margin-right: 1.25rem; }
 
+.portfolio-filters ul {
+  margin-bottom: 2.5rem;
+  text-align: left; }
+
 .portfolio-filters__filter {
   margin-right: 2.5rem; }
 
 .portfolio-filters__image {
-  position: relative;
-  margin-bottom: 1.25rem; }
+  position: relative; }
   .portfolio-filters__image span {
     position: absolute;
     top: 0.625rem;
@@ -42,9 +45,9 @@
     display: block;
     width: 100%;
     height: 100%;
-    -webkit-transition: all .25s;
-    -o-transition: all .25s;
-    transition: all .25s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
     background: rgba(0, 0, 0, 0.35);
     content: '';
     opacity: 0; }
@@ -52,5 +55,8 @@
     opacity: 1; }
   .portfolio-filters__image:hover span, .portfolio-filters__image:active span, .portfolio-filters__image:focus span {
     display: block; }
+
+.portfolio-filters .card {
+  margin-bottom: 1.25rem; }
 
 /*# sourceMappingURL=medium.min.css.map */
