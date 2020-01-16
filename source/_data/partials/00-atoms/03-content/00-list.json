@@ -1,0 +1,24 @@
+{
+	"list": {		
+	  	"item": [
+			{
+				"linktag": false,
+				"text": "List Item Number One"
+			},{
+				"linktag": {
+					"text": "List Item #2 is a link"
+				}
+			},{
+				"linktag": false,
+				"text": "Another One - this is number three"
+			},{
+				"linktag": false,
+				"text": "#4. This one has enough text to wrap lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim felis in velit viverra aliquet. Pellentesque sit amet dapibus felis. Fusce tincidunt ut mauris ac ultrices. Quisque posuere ac felis vel mollis. Maecenas condimentum maximus cursus. Vivamus luctus convallis lectus a ultricies. Nulla scelerisque diam at eros ornare molestie quis vel odio. In sodales feugiat placerat."
+			},{
+				"linktag": {
+					"text": "The last one (number 5) is also a link, but with a whole lot of text"
+				}
+			}
+		]
+	}
+}

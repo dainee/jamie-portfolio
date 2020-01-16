@@ -1,0 +1,31 @@
+body,
+button,
+input,
+select,
+textarea {
+	font-size: $font-size-base-large;
+}
+
+h1 {
+	font-size: map-get(map-get($font-sizes-heading, large), h1);
+}
+
+h2 {
+	font-size: map-get(map-get($font-sizes-heading, large), h2);
+}
+
+h3 {
+	font-size: map-get(map-get($font-sizes-heading, large), h3);
+}
+
+h4 {
+	font-size: map-get(map-get($font-sizes-heading, large), h4);
+}
+
+h5 {
+	font-size: map-get(map-get($font-sizes-heading, large), h5);
+}
+
+h6 {
+	font-size: map-get(map-get($font-sizes-heading, large), h6);
+}

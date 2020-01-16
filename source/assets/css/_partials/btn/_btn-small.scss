@@ -1,0 +1,7 @@
+button,
+[type='submit'],
+[type='button'],
+[type='reset'] {
+    // Extend the bootstrap styles by default
+    @extend .btn; // sass-lint:disable-line placeholder-in-extend
+}

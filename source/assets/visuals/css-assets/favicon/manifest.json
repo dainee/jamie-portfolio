@@ -1,0 +1,61 @@
+{
+	"icons": [
+		{
+			"src": "../../visuals/css-assets/favicon/favicon-32x32.png",
+			"type": "image/png",
+			"sizes": "32x32"
+		},{
+			"src": "../../visuals/css-assets/favicon/favicon-16x16.png",
+			"type": "image/png",
+			"sizes": "16x16"
+		},{
+			"src": "../../visuals/css-assets/favicon/apple-touch-icon-57x57.png",
+			"type": "image/png",
+			"sizes": "57x57"
+		},{
+			"src": "../../visuals/css-assets/favicon/apple-touch-icon-114x114.png",
+			"type": "image/png",
+			"sizes": "114x114"
+		},{
+			"src": "../../visuals/css-assets/favicon/apple-touch-icon-72x72.png",
+			"type": "image/png",
+			"sizes": "72x72"
+		},{
+			"src": "../../visuals/css-assets/favicon/apple-touch-icon-144x144.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},{
+			"src": "../../visuals/css-assets/favicon/apple-touch-icon-60x60.png",
+			"type": "image/png",
+			"sizes": "60x60"
+		},{
+			"src": "../../visuals/css-assets/favicon/apple-touch-icon-120x120.png",
+			"type": "image/png",
+			"sizes": "120x120"
+		},{
+			"src": "../../visuals/css-assets/favicon/apple-touch-icon-76x76.png",
+			"type": "image/png",
+			"sizes": "76x76"
+		},{
+			"src": "../../visuals/css-assets/favicon/apple-touch-icon-152x152.png",
+			"type": "image/png",
+			"sizes": "152x152"
+		},{
+			"src": "../../visuals/css-assets/favicon/mstile-70x70.png",
+			"type": "image/png",
+			"sizes": "70x70"
+		},{
+			"src": "../../visuals/css-assets/favicon/mstile-150x150.png",
+			"type": "image/png",
+			"sizes": "150x150"
+		},{
+			"src": "../../visuals/css-assets/favicon/mstile-310x150.png",
+			"type": "image/png",
+			"sizes": "310x150"
+		},{
+			"src": "../../visuals/css-assets/favicon/mstile-310x310.png",
+			"type": "image/png",
+			"sizes": "310x310"
+		}
+	]
+}

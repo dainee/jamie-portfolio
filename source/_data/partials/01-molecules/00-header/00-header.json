@@ -1,0 +1,16 @@
+{
+	"header": {
+		"title": "Jamie",
+		"id": "navbarId",
+		"navItem": [
+			{
+				"active": true,
+				"text": "Home"
+			},
+			{
+				"active": false,
+				"text": "About"
+			}
+		]
+	}
+}

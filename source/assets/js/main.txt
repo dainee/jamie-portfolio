@@ -1,0 +1,13 @@
+# TODO: Uncomment this import if popper.js is needed (dependency of Bootstrap Tooltip and Dropdown)
+# ./node_modules/popper.js/dist/umd/popper.min.js
+./node_modules/bootstrap/js/dist/util.js
+./node_modules/bootstrap/js/dist/carousel.js
+./node_modules/bootstrap/js/dist/collapse.js
+./node_modules/bootstrap/js/dist/dropdown.js
+
+# For the object-fit-images polyfill (https://www.npmjs.com/package/object-fit-images)
+# TODO: Remove lines 5-7 if not needed (and delete the object-fit-init.js file)
+./node_modules/object-fit-images/dist/ofi.min.js
+./node_modules/lazysizes/lazysizes.js
+./source/assets/js/custom/object-fit-init.js
+./source/assets/js/custom/youtube.js

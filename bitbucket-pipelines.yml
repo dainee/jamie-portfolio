@@ -1,0 +1,30 @@
+pipelines:
+  branches:
+    '{develop,master,release/**,hotfix/**}':  # Automatic builds on these branches
+      - step:
+          name: build static files
+          max-time: 10
+          script:
+            - docker build -t app:latest .
+            - docker create --name app app:latest
+            - docker cp app:/app/public public
+          services:
+            - docker
+          caches:
+            - docker
+          artifacts:
+            - public/**
+      - step:
+          name: push to s3
+          max-time: 5
+          image: python:3.5.1
+          script:
+            - pip install awscli
+            - aws s3 sync public/ s3://${S3_BUCKET_ID}/${BITBUCKET_BRANCH}
+            - if [ "${BITBUCKET_BRANCH}" == "${DEFAULT_BRANCH}" ]; then aws s3 sync public/ s3://${S3_BUCKET_ID}; fi
+            - export URL="${PL_URL}/${BITBUCKET_BRANCH}/index.html"
+            - export BUILD_STATUS="{\"key\":\"doc\", \"state\":\"SUCCESSFUL\", \"name\":\"Pattern Library\", \"url\":\"${URL}\"}"
+            - curl -H "Content-Type:application/json" -X POST --user "${BB_AUTH_STRING}" -d "${BUILD_STATUS}" "https://api.bitbucket.org/2.0/repositories/${BITBUCKET_REPO_OWNER}/${BITBUCKET_REPO_SLUG}/commit/${BITBUCKET_COMMIT}/statuses/build"
+            - echo "Deployed to ${PL_URL}/${BITBUCKET_BRANCH}/index.html"
+          caches:
+            - pip

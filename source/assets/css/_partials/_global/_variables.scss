@@ -1,0 +1,113 @@
+// Global Variables
+
+/////
+///// Colors
+/////
+$color-black: #000;
+$color-white: #fff;
+$color-gray-light: #d8d8d8;
+$color-gray: #9b9b9b;
+$color-gray-dark: #4a4a4a;
+$color-blue: #3498db;
+
+// Defining some of the common uses for the colors
+$color-text: $color-black;
+$color-link: $color-blue;
+$color-link-hover: $color-blue;
+$color-border: $color-gray;
+
+
+/////
+///// Filepaths
+/////
+
+$filepath-images: '../visuals/css-assets/';
+// $filepath-font-gotham: '../fonts/';
+
+/////
+///// Font Information
+/////
+
+$font-name-raleway: 'Raleway';
+$raleway-normal: 400;
+$raleway-bold: 500;
+$raleway-black: 700;
+
+$font-name-poppins: 'Poppins';
+$poppins-normal: 400;
+$poppins-bold: 500;
+
+$font-name-primary: $font-name-raleway;
+$font-family-primary: $font-name-primary, serif;
+$font-weights-primary: (
+	normal: $raleway-normal,
+	bold: $raleway-bold,
+	black: $raleway-black // sass-lint:disable-line no-color-keywords
+);
+
+$font-name-secondary: $font-name-poppins;
+$font-family-secondary: $font-name-secondary, sans-serif;
+$font-weights-secondary: (
+	normal: $poppins-normal,
+	bold: $poppins-bold
+);
+
+// https://type-scale.com/
+$type-scale: (1 + (1 / 3)); // perfect fourth
+$font-size-base: rem-calc(18);
+$font-sizes: (
+	tiny: pow($type-scale, -2) * $font-size-base,
+	small: pow($type-scale, -1) * $font-size-base,
+	normal: $font-size-base,
+	large: pow($type-scale, 1) * $font-size-base,
+	larger: pow($type-scale, 2) * $font-size-base,
+	xlarge: pow($type-scale, 3) * $font-size-base,
+	xxlarge: pow($type-scale, 4) * $font-size-base
+);
+
+// Different sizes depending on the breakpoint
+$font-size-base-small: map-get($font-sizes, small);
+$font-size-base-large: map-get($font-sizes, normal);
+$font-sizes-heading: (
+	small: (
+		h1: map-get($font-sizes, xlarge),
+		h2: map-get($font-sizes, large),
+		h3: map-get($font-sizes, medium),
+		h4: $font-size-base-small,
+		h5: $font-size-base-small,
+		h6: $font-size-base-small
+	),
+	large: (
+		h1: map-get($font-sizes, xxlarge),
+		h2: map-get($font-sizes, xlarge),
+		h3: map-get($font-sizes, larger),
+		h4: $font-size-base-large,
+		h5: $font-size-base-large,
+		h6: $font-size-base-large
+	)
+);
+$line-height: 1.6;
+$line-height-smaller: 1.1;
+
+
+
+
+/////
+///// Transition Speeds
+/////
+$transition-slow: .6s;
+$transition-med: .3s;
+$transition-fast: .1s;
+
+
+
+/////
+///// Global Z-indexes
+/////
+$z-util: 9999; // start at the highest
+
+
+
+/////
+///// Misc variables that need to be shared between files
+/////

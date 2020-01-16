@@ -1,0 +1,20 @@
+$block: 'header';
+
+.#{$block} {
+	.navbar-brand {
+		img {
+			width: rem-calc(100);
+		}
+	}
+
+	.navbar-toggler {
+		&[aria-expanded='true'],
+		&[aria-expanded='false'] {
+			display: none;
+		}
+	}
+
+	.nav-link {
+		margin-left: 0;
+	}
+}

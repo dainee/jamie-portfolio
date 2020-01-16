@@ -1,0 +1,69 @@
+body,
+button,
+input,
+select,
+textarea {
+	font-size: $font-size-base-small;
+	// sass-lint:disable no-vendor-prefixes
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	// sass-lint:enable no-vendor-prefixes
+}
+
+a {
+	transition: color $transition-med;
+}
+
+h1 {
+	font-size: map-get(map-get($font-sizes-heading, small), h1);
+}
+
+h2 {
+	font-size: map-get(map-get($font-sizes-heading, small), h2);
+}
+
+h3 {
+	font-size: map-get(map-get($font-sizes-heading, small), h3);
+}
+
+h4 {
+	font-size: map-get(map-get($font-sizes-heading, small), h4);
+}
+
+h5 {
+	font-size: map-get(map-get($font-sizes-heading, small), h5);
+}
+
+h6 {
+	font-size: map-get(map-get($font-sizes-heading, small), h6);
+}
+
+blockquote {
+	text-align: center;
+}
+
+hr {
+	height: 1px;
+}
+
+table {
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+b,
+strong {
+	font-weight: fwp(bold);
+}

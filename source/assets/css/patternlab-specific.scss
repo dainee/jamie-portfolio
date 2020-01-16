@@ -1,0 +1,28 @@
+/////
+///// This stylesheet is for styles you want to include only when displaying demo
+///// styles for grids, animations, color swatches, etc.
+///// These styles will not be your production CSS.
+///// 
+@import 'global-imports';
+
+#sg-patterns { // sass-lint:disable-line no-ids
+	box-sizing: border-box !important; // sass-lint:disable-line no-important
+	max-width: 100%;
+	padding: 0 .5em;
+}
+
+.sg-label {
+	font-size: 90%;
+	line-height: 1;
+}
+
+.sg-panel {
+	width: 60%;
+	margin: 30px auto;
+	padding: 30px;
+	text-align: center;
+}
+
+@import '_partials/_patternlab-specific/colors';
+@import '_partials/_patternlab-specific/fonts';
+@import '_partials/_patternlab-specific/icons';

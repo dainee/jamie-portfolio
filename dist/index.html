@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="no-js ie ie--old"><![endif]-->
+<!--[if IE]><html class="no-js ie"><![endif]-->
+<!--[if !IE]><!--><html class="no-js"><!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>title</title>
+
+		<!-- TODO: Create favicon assets and link them here (manifest files, too) -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+		
+		<!-- Shiv is needed at the top so old browsers know how to handle the HTML as they read it -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+
+		<link rel="stylesheet" href="css/small.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/medium.min.css" type="text/css" media="screen and (min-width: 764px)" />
+		<link rel="stylesheet" href="css/large.min.css" type="text/css" media="screen and (min-width: 1024px)" />
+		<link rel="stylesheet" href="css/xlarge.min.css" type="text/css" media="screen and (min-width: 1200px)" />
+	</head>
+	<body>
+		
+		<h1>HTML Ipsum Presents</h1>
+
+		<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+		<h2>Header Level 2</h2>
+
+		<ol>
+			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			<li>Aliquam tincidunt mauris eu risus.</li>
+		</ol>
+
+		<h3>Icons</h3>
+		<p><strong>Small:</strong><br>
+			<span class="icon--facebook" title="Normal"></span>
+			<span class="icon--facebook icon--circle" title="Circle"></span><br>
+			<span class="icon--facebook icon--left" title="facebook Left">To the left of the text</span><br>
+			<span class="icon--facebook icon--right" title="facebook Right">To the right of the text</span>
+		</p>
+		<p><strong>Large:</strong><br>
+			<span class="icon--facebook icon--large" title="Large"></span>
+			<span class="icon--facebook icon--large icon--circle" title="Large Circle"></span><br>
+			<span class="icon--facebook icon--large icon--left" title="facebook Left">To the left of the text &amp; large</span><br>
+			<span class="icon--facebook icon--large icon--right" title="facebook Right">To the right of the text &amp; large</span>
+		</p>
+
+		<p>Demonstration of icon without "icon" class (also with stroke): <span class="test__icon"></span></p>
+
+		<hr>
+
+		<p>Other Icons:
+			<ul>
+				<li><span class="icon--instagram" title="instagram"></span> instagram</li>
+				<li><span class="icon--linkedin" title="linkedin"></span> linkedin</li>
+			</ul>
+		</p>
+
+		<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+		<h3>Header Level 3</h3>
+
+		<ul>
+			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			<li>Aliquam tincidunt mauris eu risus.</li>
+		</ul>
+
+		<section>
+			<h2>Example of a Successful AJAX Call</h2>
+			<!--
+				The action should be the static URL that will send back a representative response.
+				Since this is in the HTML, it can be updated as necessary upon integration without needing to rewrite JavaScript.
+				It's also a valid form, so if JS is disabled, the user could still, in theory, get to results (albeit they may not be pretty).
+
+				The method will be pulled in the JS, and can be updated upon integration if necessary
+			-->
+			<form class="js-test" action="endpoints/test.json" method="GET">
+				<!--
+					The "name" attribute on the inputs will be used for the data keys,
+					and the "value" will be used for the data value.
+
+					If there are keys that should not be shown to the user, leverage a hidden input.
+				-->
+				<input type="hidden" name="datakey" value="datavalue" />
+				<input type="text" name="userinput" value="" required />
+
+				<button type="submit">Hit the Endpoint!</button>
+
+				<!-- Don't forget a loading indicator -->
+				<div class="js-test-loading" style="display:none;">Loading...</div>
+
+				<!-- Put as much of what should be shown in results in the HTML (less JS rendering = better performance) -->
+				<div class="js-test-result" style="display:none;">
+					<div class="js-test-result-success">The AJAX Response was successful!</div>
+					<div class="js-test-result-error">The AJAX Response had an error</div>
+				</div>
+			</form>
+		</section>
+
+		<section>
+			<h2>Example of a Failed AJAX Call</h2>
+
+			<form class="js-test" action="endpoints/this_endpoint_does_not_exist_so_this_should_404.json" method="GET">
+				<input type="hidden" name="datakey" value="datavalue" />
+				<input type="text" name="userinput" value="" required />
+
+				<button type="submit">Hit the Endpoint!</button>
+
+				<div class="js-test-loading" style="display:none;">Loading...</div>
+
+				<div class="js-test-result" style="display:none;">
+					<div class="js-test-result-success">The AJAX Response was successful!</div>
+					<div class="js-test-result-error">The AJAX Response had an error</div>
+				</div>
+			</form>
+		</section>
+
+		<p>Senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+		<p>Netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+
+
+		<!-- TODO: Remove test.js (just an example), and update/customize the other scripts as needed -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js" type="text/javascript"></script>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script> if( typeof jQuery == 'undefined' ) { document.write( '<script src="../../js/jquery.js"\>\<\/script\>' ); } </script>
+		
+		<script src="/js/main.js"></script>
+		<script src="/js/test.js"></script>
+	</body>
+</html>

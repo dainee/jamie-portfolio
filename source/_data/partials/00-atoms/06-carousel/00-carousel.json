@@ -1,0 +1,49 @@
+{
+	"carousel": {
+		"id": "carouselId",
+		"carouselIndicatorList": [
+			{
+				"id": "carouselId",
+				"dataSlideTo": "0",
+				"active": true
+			},
+			{
+				"id": "carouselId",
+				"dataSlideTo": "1",
+				"active": false
+			},
+			{
+				"id": "carouselId",
+				"dataSlideTo": "2",
+				"active": false
+			}
+		],
+		"carouselItem": [
+			{
+				"active": true,
+				"imgSrc": "../../visuals/placeholders/brycecanyon.jpg",
+				"imgAlt": "Antelope Canyon"
+			},
+			{
+				"active": false,
+				"imgSrc": "../../visuals/placeholders/goldengatebridge.jpg",
+				"imgAlt": "Golden Gate Bridge"
+			},
+			{
+				"active": false,
+				"imgSrc": "../../visuals/placeholders/newyork.jpg",
+				"imgAlt": "New York"
+			}
+		],
+		"arrow": [
+			{
+				"direction": "prev",
+				"ariaLabel": "Previous"
+			},
+			{
+				"direction": "next",
+				"ariaLabel": "Next"
+			}
+		]
+	}
+}

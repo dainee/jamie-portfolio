@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="{{htmlClass}} no-js ie ie--old"><![endif]-->
+<!--[if IE]><html class="{{htmlClass}} no-js ie"><![endif]-->
+<!--[if !IE]><!--><html class="{{htmlClass}} no-js"><!--<![endif]-->
+<head>
+	<title>{{ title }}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	{{! TODO: Update favicon assets to match branding/theme }}
+	<link rel="shortcut icon" href="../../visuals/css-assets/favicon/favicon.ico" type="image/vnd.microsoft.icon" />
+	<link rel="icon" type="image/png" href="../../visuals/css-assets/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="../../visuals/css-assets/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../visuals/css-assets/favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../visuals/css-assets/favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../visuals/css-assets/favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../visuals/css-assets/favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../visuals/css-assets/favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../visuals/css-assets/favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../visuals/css-assets/favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../visuals/css-assets/favicon/apple-touch-icon-152x152.png" />
+	<meta name="application-name" content="PatternLab" />
+	<meta name="theme-color" content="#fff" />
+	<meta name="msapplication-TileColor" content="#fff" />
+	<meta name="msapplication-TileImage" content="../../visuals/css-assets/favicon/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="../../visuals/css-assets/favicon/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="../../visuals/css-assets/favicon/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="../../visuals/css-assets/favicon/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="../../visuals/css-assets/favicon/mstile-310x310.png" />
+
+	{{! TODO: Update this file if favicons are added/removed, or if their filenames/sizes/paths change }}
+	<link rel="manifest" href="../../visuals/css-assets/favicon/manifest.json" />
+
+	<!-- Shiv is needed at the top so old browsers know how to handle the HTML as they read it -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+
+	<link rel="stylesheet" href="../../css/small.min.css?{{ sgCacheBuster }}" type="text/css" />
+	<link rel="stylesheet" href="../../css/medium.min.css?{{ sgCacheBuster }}" type="text/css" media="screen and (min-width: 768px)" />
+	<link rel="stylesheet" href="../../css/large.min.css?{{ sgCacheBuster }}" type="text/css" media="screen and (min-width: 992px)" />
+	<link rel="stylesheet" href="../../css/xlarge.min.css?{{ sgCacheBuster }}" type="text/css" media="screen and (min-width: 1200px)" />
+
+	{{^integrating}}
+		<!-- This is ONLY for patternlab presentation and should not be integrated -->
+		<link rel="stylesheet" href="../../css/patternlab-specific.min.css?{{ sgCacheBuster }}" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		{{{ patternLabHead }}}
+		<!-- End Pattern Lab -->
+	{{/integrating}}
+
+</head>
+<body class="{{ bodyClass }}">

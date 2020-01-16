@@ -1,0 +1,44 @@
+$block: 'header';
+
+.#{$block} {
+	ul {
+		@include no-custom-bullets;
+		margin-left: auto;
+	}
+
+	.navbar {
+		padding-top: rem-calc(20);
+		padding-bottom: rem-calc(20);
+		background-color: $color-white;
+	}
+
+	.navbar-brand {
+		img {
+			width: rem-calc(80);
+		}
+	}
+
+	.nav-link {
+		margin-left: rem-calc(15);
+		color: $color-black;
+		font-family: $font-family-secondary;
+		font-size: fs(small);
+		font-weight: map-get($font-weights-secondary, bold);
+		text-transform: uppercase;
+	}
+
+	.navbar-toggler {
+		&[aria-expanded='true'],
+		&[aria-expanded='false'] {
+			@include icon-base;
+		}
+
+		&[aria-expanded='true'] {
+			@include icon('close', 15px, $color-black);
+		}
+
+		&[aria-expanded='false'] {
+			@include icon('bar', 20px, $color-black);
+		}
+	}
+}
