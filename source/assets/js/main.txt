@@ -11,3 +11,4 @@
 ./node_modules/lazysizes/lazysizes.js
 ./source/assets/js/custom/object-fit-init.js
 ./source/assets/js/custom/youtube.js
+./source/assets/js/custom/portfolio-filters.js

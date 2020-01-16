@@ -1,5 +1,5 @@
 {
-	"sgCacheBuster": 1579198266365,
+	"sgCacheBuster": 1579202285140,
 	"integrating": false,
 	"url": "#",
 	"colors": [
@@ -105,6 +105,12 @@
 		"src": "../../visuals/placeholders/headshot1.png",
 		"alt": "lazy image"
 	},
+	"youtube": {
+		"youtubeId": "Wjrrgrvq1ew",
+		"iframeId": "iframeid",
+		"title": "Custom YouTube Video",
+		"alt": "Custom Youtube Video"
+	},
 	"carousel": {
 		"id": "carouselId",
 		"carouselIndicatorList": [
@@ -152,12 +158,6 @@
 			}
 		]
 	},
-	"youtube": {
-		"youtubeId": "Wjrrgrvq1ew",
-		"iframeId": "iframeid",
-		"title": "Custom YouTube Video",
-		"alt": "Custom Youtube Video"
-	},
 	"header": {
 		"title": "Jamie",
 		"id": "navbarId",
@@ -185,5 +185,8 @@
 				"text": "Instagram"
 			}
 		]
+	},
+	"portfolioFilters": {
+		"text": "Hello World, from 00-portfolio-filters."
 	}
 }

@@ -60,18 +60,30 @@
 </head>
 
 <body class="">
-  <div class="youtube">
-    <article class="youtube__featured js-animate--in">
-      <div class="youtube__video">
-        <button class="youtube__video-poster" type="button" name="video play button">
-				<img src="https://img.youtube.com/vi/Wjrrgrvq1ew/maxresdefault.jpg">
-			</button>
-        <div class="youtube__iframe-wrapper">
-          <iframe title="Custom YouTube Video" alt="Custom Youtube Video" id="iframeid" class="embed-responsive-item" src="https://www.youtube.com/embed/Wjrrgrvq1ew?enablejsapi=1&amp;showinfo=0&amp;rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""
-            tabindex="-1">YouTube embedded video: https://www.youtube-nocookie.com/embed/Wjrrgrvq1ew</iframe>
-        </div>
-      </div>
-    </article>
+
+  <div class="portfolio-filters">
+    <section id="controls">
+      <ul>
+        <li class="filter filter-all active">All</li>
+        <li class="filter filter-landscape">Landscape</li>
+        <li class="filter filter-urban">Urban</li>
+        <li class="filter filter-portrait">Portrait</li>
+      </ul>
+    </section>
+    <div class="grid-wrapper">
+      <div class="image landscape landscape-1 all"></div>
+      <div class="image urban urban-1 all"></div>
+      <div class="image urban urban-2 all"></div>
+      <div class="image portrait portrait-1 all"></div>
+      <div class="image urban urban-3 all"></div>
+      <div class="image portrait portrait-2 all"></div>
+      <div class="image urban urban-4 all"></div>
+      <div class="image landscape landscape-2 all"></div>
+      <div class="image portrait portrait-3 all"></div>
+      <div class="image landscape landscape-3 all"></div>
+      <div class="image landscape landscape-4 all"></div>
+      <div class="image portrait portrait-4 all"></div>
+    </div>
   </div>
 
   <!--DO NOT REMOVE-->
@@ -87,12 +99,12 @@
       "patternLineageEExists": false,
       "patternDesc": "",
       "patternBreadcrumb": {
-        "patternType": "atoms",
-        "patternSubtype": "video"
+        "patternType": "molecules",
+        "patternSubtype": "portfolio-filters"
       },
       "patternExtension": "mustache",
-      "patternName": "Youtube",
-      "patternPartial": "atoms-youtube",
+      "patternName": "Portfolio Filters",
+      "patternPartial": "molecules-portfolio-filters",
       "patternState": "",
       "patternEngineName": "mustache",
       "extraOutput": {}
