@@ -5936,4 +5936,28 @@ ol {
   background-size: 20px;
   line-height: 20px; }
 
+.footer {
+  padding: 0.9375rem 0;
+  border-top: 0.0625rem solid #d8d8d8;
+  color: #4a4a4a;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.84375rem;
+  text-align: center; }
+  .footer p {
+    margin: 0; }
+  .footer__license {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .footer__social {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 0.9375rem; }
+    .footer__social a {
+      margin-right: 1.875rem;
+      color: #4a4a4a; }
+      .footer__social a:last-child {
+        margin-right: 0; }
+
 /*# sourceMappingURL=small.min.css.map */

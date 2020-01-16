@@ -1,3 +1,32 @@
 $block: 'footer';
-// sass-lint:disable no-empty-rulesets
-.#{$block} {}
+
+.#{$block} {
+	padding: rem-calc(15) 0;
+	border-top: rem-calc(1) solid $color-gray-light;
+	color: $color-gray-dark;
+	font-family: $font-family-secondary;
+	font-size: fs(small);
+	text-align: center;
+
+	p {
+		margin: 0;
+	}
+
+	&__license {
+		order: 2;
+	}
+
+	&__social {
+		order: 1;
+		margin-bottom: rem-calc(15);
+
+		a {
+			margin-right: rem-calc(30);
+			color: $color-gray-dark;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

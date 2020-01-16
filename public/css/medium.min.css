@@ -7,4 +7,19 @@
 .header .nav-link {
   margin-left: 0; }
 
+.footer {
+  padding: 1.875rem 0; }
+  .footer__license {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left; }
+  .footer__social {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: right; }
+    .footer__social a {
+      margin-right: 1.25rem; }
+
 /*# sourceMappingURL=medium.min.css.map */

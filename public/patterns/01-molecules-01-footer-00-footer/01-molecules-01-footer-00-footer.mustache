@@ -1,2 +1,15 @@
 {{#footer}}
-<p>{{text}}</p>{{/footer}}
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 footer__license">
+        <p>{{license}}</p>
+      </div>
+      <div class="col-12 col-md-6 footer__social">
+        {{#social}}
+        <a href="{{url}}">{{text}}</a> {{/social}}
+      </div>
+    </div>
+  </div>
+</section>
+{{/footer}}

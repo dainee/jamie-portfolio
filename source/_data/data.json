@@ -1,5 +1,5 @@
 {
-	"sgCacheBuster": 1579188830909,
+	"sgCacheBuster": 1579198266365,
 	"integrating": false,
 	"url": "#",
 	"colors": [
@@ -101,12 +101,6 @@
 			"label": "Another Checkbox"
 		}
 	],
-	"youtube": {
-		"youtubeId": "Wjrrgrvq1ew",
-		"iframeId": "iframeid",
-		"title": "Custom YouTube Video",
-		"alt": "Custom Youtube Video"
-	},
 	"lazyLoadImage": {
 		"src": "../../visuals/placeholders/headshot1.png",
 		"alt": "lazy image"
@@ -158,8 +152,13 @@
 			}
 		]
 	},
+	"youtube": {
+		"youtubeId": "Wjrrgrvq1ew",
+		"iframeId": "iframeid",
+		"title": "Custom YouTube Video",
+		"alt": "Custom Youtube Video"
+	},
 	"header": {
-		"text": "Hello World, from 00-header.",
 		"title": "Jamie",
 		"id": "navbarId",
 		"navItem": [
@@ -174,6 +173,17 @@
 		]
 	},
 	"footer": {
-		"text": "Hello World, from 00-footer."
+		"license": "@ 2020 Jamie Lee",
+		"social": [
+			{
+				"text": "LinkedIn"
+			},
+			{
+				"text": "Tumblr"
+			},
+			{
+				"text": "Instagram"
+			}
+		]
 	}
 }
