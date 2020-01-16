@@ -1,0 +1,25 @@
+*.sublime-project
+*.sublime-workspace
+
+# node dependencies
+node_modules/*
+
+# pattern library compiled files
+public/*
+
+# compiled files
+dist/*
+
+# files to be integrated into the CMS
+integrated/*
+
+# git
+.git/
+.gitignore
+
+# CI scripts
+bitbucket-pipelines.yml
+
+# misc.
+gulp
+README.md
