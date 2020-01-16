@@ -1,0 +1,7 @@
+{{#list}}
+	<{{^ordered}}ul{{/ordered}}{{#ordered}}ol{{/ordered}}>
+		{{#item}}
+			<li>{{> atoms-linktag }}{{#text}}{{{.}}}{{/text}}</li>
+		{{/item}}
+	</{{^ordered}}ul{{/ordered}}{{#ordered}}ol{{/ordered}}>
+{{/list}}

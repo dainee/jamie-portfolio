@@ -1,0 +1,16 @@
+$block: 'sg-icons';
+
+[class^='#{$block}--'],
+[class*=' #{$block}--'] {
+	@include icon-base;
+}
+
+@each $icon in get-all-icons() {
+	$key: nth($icon, 1);
+
+  	.#{$block}--#{$key} {
+  		@include icon($key);
+  		margin-right: 10px;
+  		vertical-align: middle;
+  	}
+}

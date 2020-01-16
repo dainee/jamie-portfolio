@@ -1,0 +1,37 @@
+.sg-fonts--primary {
+	&,
+	* {
+		font-family: $font-family-primary !important; // sass-lint:disable-line no-important
+	}
+
+	// .sg-fonts--light {
+	// 	font-weight: fwp(light);
+	// }
+
+	// .sg-fonts--medium {
+	// 	font-weight: fwp(normal);
+	// }
+
+	.sg-fonts--black {
+		font-weight: fwp(black); // sass-lint:disable-line no-color-keywords no-color-literals
+	}
+}
+
+.sg-fonts--secondary {
+	&,
+	* {
+		font-family: $font-family-secondary !important; // sass-lint:disable-line no-important
+	}
+
+	// .sg-fonts--light {
+	// 	font-weight: fws(light);
+	// }
+
+	// .sg-fonts--medium {
+	// 	font-weight: fws(normal);
+	// }
+
+	// .sg-fonts--black {
+	// 	font-weight: fws(black); // sass-lint:disable-line no-color-keywords no-color-literals
+	// }
+}

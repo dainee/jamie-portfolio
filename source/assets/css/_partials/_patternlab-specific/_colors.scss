@@ -1,0 +1,66 @@
+.sg-colors {
+	@include no-custom-bullets;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 !important; // sass-lint:disable-line no-important
+	padding: 0 !important; // sass-lint:disable-line no-important
+	list-style: none !important; // sass-lint:disable-line no-important
+
+	li {
+		flex: 0 1 auto;
+		min-width: 15%;
+		max-width: 40%;
+		margin: 0 15px 15px 0;
+		padding: 10px 20px;
+		border: 5px solid $color-white;
+		box-shadow: 0 0 2px $color-border;
+
+		&:after {
+			display: block;
+			margin-top: rem-calc(5);
+			font-size: 70%;
+		}
+	}
+}
+
+.sg-colors--black {
+	background: $color-black;
+	color: $color-white;
+
+	&:after { content: '#{$color-black}'; }
+}
+
+.sg-colors--white {
+	background: $color-white;
+
+	&:after { content: '#{$color-white}'; }
+}
+
+.sg-colors--gray-light {
+	background: $color-gray-light;
+	color: $color-gray-dark;
+
+	&:after { content: '#{$color-gray-light}'; }
+}
+
+.sg-colors--gray {
+	background: $color-gray;
+	color: $color-white;
+
+	&:after { content: '#{$color-gray}'; }
+}
+
+.sg-colors--gray-dark {
+	background: $color-gray-dark;
+	color: $color-white;
+
+	&:after { content: '#{$color-gray-dark}'; }
+}
+
+
+.sg-colors--blue {
+	background: $color-blue;
+	color: $color-white;
+
+	&:after { content: '#{$color-blue}'; }
+}

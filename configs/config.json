@@ -1,0 +1,170 @@
+{
+    "autoprefixer": {
+        "browsers": [
+            "last 3 versions",
+            "> 5%"
+        ]
+    },
+    "browsersync": {
+        "server": "./public/"
+    },
+    "esLint": {
+        "configFile": "./configs/.eslintrc",
+        "fix": true
+    },
+    "mergeJson": {
+        "fileName": "data.json",
+        "mergeArrays":false,
+        "concatArrays": false
+    },
+    "sassLint": {
+        "configFile": "./configs/scss-lint.yml"
+    },
+    "js-compilation": {
+        "useInstructions": true,
+        "simpleConcat": false,
+        "simpleMove": false
+    },
+    "generateMapsOnIntegration": false,
+    "filepaths": {
+
+        "stylesSrcRoot": "./source/assets/css/",
+        "stylesSrc": "./source/assets/css/**/*.scss",
+        "stylesSrcVendor": [
+            "./source/assets/css/_partials/_vendor/*.scss",
+            "./source/assets/css/_partials/_vendor/**/*.scss"
+        ],
+        "stylesDest": "./public/css/",
+        "stylesSourcePath": "../../source/assets/css/",
+
+        "scriptsSrcRoot": "./source/assets/js/",
+        "scriptsSrcInstructions": "./source/assets/js/*.txt",
+        "scriptsSrc": "./source/assets/js/**/*.js",
+        "scriptsSrcVendor": "./source/assets/js/vendor/*.js",
+    	"scriptsDest": "./public/js/",
+        "scriptsSourcePath": "../../source/assets/js/",
+
+        "imagesSrcRoot": "./source/assets/visuals/",
+        "imagesSrc": [
+            "./source/assets/visuals/**/*"
+        ],
+
+        "imagesDest": "./public/visuals/",
+
+        "fontsSrcRoot": "./source/assets/fonts/",
+        "fontsSrc": "./source/assets/fonts/**/*",
+        "fontsDest": "./public/fonts/",
+
+        "endpointsSrc": [ "./source/endpoints/**/*.*", "./source/endpoints/*.*"],
+        "endpointsDest": "./public/endpoints/",
+
+        "todos": [
+            "./*.js",
+            "./source/**/*.js",
+            "./source/**/*.scss",
+            "./source/**/*.html",
+            "./source/**/*.php",
+            "./source/**/*.mustache",
+            "./source/assets/js/*.txt"
+        ],
+
+        "jsonSrc": "./source/_data/partials/**/*.json",
+        "jsonDest": "./source/_data/",
+
+        "integrationSrc": {
+            "css": [
+                "./public/css/*.css",
+                "./public/css/**/*.css"
+            ],
+            
+            "cssSourceMaps": [
+                "./public/css/*.css.map",
+                "./public/css/**/*.css.map"
+            ],
+
+            "js": [
+                "./public/js/*.js",
+                "./public/js/**/*.js"
+            ],
+
+            "jsSourceMaps": [
+                "./public/js/*.js.map",
+                "./public/js/**/*.js.map"
+            ],
+
+            "images": [
+                "./public/visuals/*",
+                "./public/visuals/**/*",
+                "!./public/visuals/placeholders",
+                "!./public/visuals/placeholders/*",
+                "!./public/visuals/placeholders/**/*"
+            ],
+
+            "fonts": "./public/fonts/**/*",
+
+            "html": [
+                "./public/patterns/04-pages*/*.rendered.html",
+                "!./public/patterns/04-pages*/04-pages-99-utilities-00-welcome.rendered.html"
+            ]
+        },
+        "integrationDest": {
+            "css": "./integrated/css/",
+            "cssSourcePath": "../../source/assets/css/",
+
+            "js": "./integrated/js/",
+            "jsSourcePath": "../../source/assets/js/",
+
+            "images": "./integrated/visuals/",
+
+            "fonts": "./integrated/fonts/",
+
+            "html": "./integrated/html/",
+
+            "versionNumFile": "./integrated/.version"
+        }
+    },
+    "scss-generator": {
+        "placeholder": "{{!BASE_NAME_GOES_HERE!}}",
+        "template": "$block: '{{!BASE_NAME_GOES_HERE!}}';\n// sass-lint:disable no-empty-rulesets\n.#{$block} {}\n",
+        "destination": "./source/assets/css/_partials/{{!BASE_NAME_GOES_HERE!}}/",
+        "importBefore": "// generated-files-here (do not remove)",
+        "files": [
+            {
+                "name": "_{{!BASE_NAME_GOES_HERE!}}-small.scss",
+                "importFrom": "./source/assets/css/small.scss",
+                "importTemplate": "@import '_partials/{{!BASE_NAME_GOES_HERE!}}/{{!BASE_NAME_GOES_HERE!}}-small';\n"
+            },{
+                "name": "_{{!BASE_NAME_GOES_HERE!}}-medium.scss",
+                "importFrom": "./source/assets/css/medium.scss",
+                "importTemplate": "@import '_partials/{{!BASE_NAME_GOES_HERE!}}/{{!BASE_NAME_GOES_HERE!}}-medium';\n"
+            },{
+                "name": "_{{!BASE_NAME_GOES_HERE!}}-large.scss",
+                "importFrom": "./source/assets/css/large.scss",
+                "importTemplate": "@import '_partials/{{!BASE_NAME_GOES_HERE!}}/{{!BASE_NAME_GOES_HERE!}}-large';\n"
+            },{
+                "name": "_{{!BASE_NAME_GOES_HERE!}}-xlarge.scss",
+                "importFrom": "./source/assets/css/xlarge.scss",
+                "importTemplate": "@import '_partials/{{!BASE_NAME_GOES_HERE!}}/{{!BASE_NAME_GOES_HERE!}}-xlarge';\n"
+            }
+        ]
+    },
+    "js-generator": {
+        "placeholder": "{{!BASE_NAME_GOES_HERE!}}",
+        "template": "( function( $ ) {\n\t$( document ).ready( function() {\n\t\tconsole.log( 'Hello World, from {{!BASE_NAME_GOES_HERE!}}' );\n\t} );\n} )( jQuery );",
+        "destination": "./source/assets/js/custom/",
+        "defaultImporter": "./source/assets/js/main.txt",
+        "importAfter": true,
+        "importTemplate": "./source/assets/js/custom/{{!BASE_NAME_GOES_HERE!}}.js\n",
+        "files": [
+            {
+                "name": "{{!BASE_NAME_GOES_HERE!}}.js"
+            }
+        ]
+    },
+    "pattern-generator": {
+        "fileNamePlaceholder": "{{!FILE_NAME_GOES_HERE!}}",
+        "jsonNamePlaceholder": "{{!JSON_NAME_GOES_HERE!}}",
+        "mustacheTemplate": "{{#{{!JSON_NAME_GOES_HERE!}}}}<p>{{text}}</p>{{/{{!JSON_NAME_GOES_HERE!}}}}",
+        "jsonTemplate": "{\n\t\"{{!JSON_NAME_GOES_HERE!}}\": {\n\t\t\"text\": \"Hello World, from {{!FILE_NAME_GOES_HERE!}}.\"\n\t}\n}"
+    }
+}

@@ -1,0 +1,80 @@
+[type='text'],
+[type='email'],
+[type='number'],
+[type='tel'],
+[type='url'],
+textarea {
+	// Extend the bootstrap styles by default
+	@extend .form-control; // sass-lint:disable-line placeholder-in-extend
+}
+
+select {
+	// Extend the bootstrap styles by default
+	@extend .custom-select; // sass-lint:disable-line placeholder-in-extend
+}
+
+// for custom checkboxes/radio buttons
+$shape-size: rem-calc(16);
+$shape-margin: rem-calc(10);
+
+[type='checkbox'],
+[type='radio'] {
+	position: absolute;
+	opacity: 0;
+
+	+ label {
+		display: block;
+		margin: 0 0 0 ($shape-size + $shape-margin);
+		cursor: pointer;
+
+		&:before {
+			display: inline-block;
+			width: $shape-size;
+			height: $shape-size;
+			margin: 0 $shape-margin 0 (-($shape-size + $shape-margin));
+			border: 1px solid $color-border;
+			content: '';
+		}
+	}
+
+	&:checked + label {
+		&:before {
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+	}
+
+	&:focus + label {
+		&:before {
+			outline: auto;
+		}
+	}
+
+	&:disabled + label {
+		opacity: .5;
+	}
+}
+
+[type='checkbox'] {
+	&:checked + label {
+		&:before {
+			@include icon(checkbox, $shape-size, $color-text);
+			background-size: rem-calc(10);
+		}
+	}
+}
+
+[type='radio'] {
+	+ label {
+		&:before {
+			border-radius: 50%;
+		}
+	}
+
+	&:checked + label {
+		&:before {
+			@include icon(radio-button, $shape-size, $color-text);
+			background-size: rem-calc(6);
+		}
+	}
+}

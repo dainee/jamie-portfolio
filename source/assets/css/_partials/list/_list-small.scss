@@ -1,0 +1,41 @@
+ul,
+ol {
+	$li-margin: rem-calc(10);
+	$bullet-width: rem-calc(10);
+
+	margin-left: $bullet-width + $li-margin;
+	text-indent: -($bullet-width + $li-margin);
+	list-style-type: none;
+
+	// sass-lint:disable nesting-depth
+	> li {
+		&:before {
+			display: inline-block;
+			width: $bullet-width;
+			margin-right: $li-margin;
+			color: $color-gray;
+		}
+	}
+}
+
+ul {
+	> li {
+		&:before {
+			content: '\25c6'; // diamond
+		}
+	}
+}
+
+ol {
+	counter-reset: ol-counter;
+
+	> li {
+		counter-increment: ol-counter;
+
+		&:before {
+			font-weight: fwp(bold);
+			content: counter(ol-counter) '. ';
+		}
+	}
+	// sass-lint:enable nesting-depth
+}

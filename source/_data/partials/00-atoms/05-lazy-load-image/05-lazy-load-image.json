@@ -1,0 +1,6 @@
+{
+	"lazyLoadImage": {
+		"src": "../../visuals/placeholders/headshot1.png",
+		"alt": "lazy image"
+	}
+}

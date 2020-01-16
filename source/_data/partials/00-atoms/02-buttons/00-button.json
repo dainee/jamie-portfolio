@@ -1,0 +1,7 @@
+{
+	"button": {
+		"btnText": "Example Button",
+		"btnPrimary": true,
+		"btnSecondary": false
+	}
+}

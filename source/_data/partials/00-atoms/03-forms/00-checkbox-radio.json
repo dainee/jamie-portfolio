@@ -1,0 +1,39 @@
+{
+	"checkboxRadio": [
+		{
+			"checkbox": true,
+			"radio": false,
+			"name": "checkbox1",
+			"id": "checkbox-demo-1",
+			"checked": true,
+			"label": "Checkbox that's checked by default."
+		},{
+			"checkbox": true,
+			"radio": false,
+			"name": "checkbox2",
+			"id": "checkbox-demo-2",
+			"label": "Example Checkbox that's Really Long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a quam ut nisi iaculis dapibus. Nam vitae risus lorem. Aliquam et magna urna. Vivamus molestie magna vitae lobortis vestibulum."
+		},{
+			"checkbox": true,
+			"radio": false,
+			"name": "checkbox3",
+			"id": "checkbox-demo-3",
+			"disabled": true,
+			"label": "This is a disabled checkbox."
+		},{
+			"checkbox": true,
+			"radio": false,
+			"name": "checkbox3",
+			"id": "checkbox-demo-3",
+			"disabled": true,
+			"checked": true,
+			"label": "This is a disabled checkbox that's checked."
+		},{
+			"checkbox": true,
+			"radio": false,
+			"name": "checkbox4",
+			"id": "checkbox-demo-4",
+			"label": "Another Checkbox"
+		}
+	]
+}
