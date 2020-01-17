@@ -1,0 +1,89 @@
+{
+	"portfolioFilters": {
+		"filterList": [
+			{
+				"active": true,
+				"all": true,
+				"filterOne": false,
+				"filterTwo": false,
+				"menu": "All"
+			},
+			{
+				"active": false,
+				"all": false,
+				"filterOne": true,
+				"filterTwo": false,
+				"menu": "UI/UX"
+			},
+			{
+				"active": false,
+				"all": false,
+				"filterOne": false,
+				"filterTwo": true,
+				"menu": "Others"
+			}
+		],
+		"imageCard": [
+			{
+				"imgClass": "one",
+				"imgSrc": "../../visuals/placeholders/Zerowasters.png",
+				"imgAlt": "Zerowasters",
+				"name": "Zerowasters"
+			},
+			{
+				"imgClass": "one",
+				"imgSrc": "../../visuals/placeholders/Travelapp.png",
+				"imgAlt": "Travelapp",
+				"name": "Travelapp"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "../../visuals/placeholders/Depression.png",
+				"imgAlt": "Depression",
+				"name": "Depression"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "../../visuals/placeholders/Studio-in-the-woods.png",
+				"imgAlt": "Studio in the Woods",
+				"name": "Studio in the Woods"
+			},
+			{
+				"imgClass": "one",
+				"imgSrc": "../../visuals/placeholders/Interecipes.png",
+				"imgAlt": "Interecipes",
+				"name": "Interecipes"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "../../visuals/placeholders/T-shirt.png",
+				"imgAlt": "T Shirt",
+				"name": "T-shirt Design"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "../../visuals/placeholders/hair-by-jaylynn.png",
+				"imgAlt": "Hair by Jaylynn",
+				"name": "Hair by Jaylynn"
+			},
+			{
+				"imgClass": "one",
+				"imgSrc": "../../visuals/placeholders/Letitgo.png",
+				"imgAlt": "Letitgo",
+				"name": "Letitgo"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "../../visuals/placeholders/LyftEats.png",
+				"imgAlt": "LyftEats",
+				"name": "LyftEats"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "../../visuals/placeholders/FeedtheHungry.png",
+				"imgAlt": "Feed the Hungry",
+				"name": "Feed the Hungry"
+			}
+		]
+	}
+}

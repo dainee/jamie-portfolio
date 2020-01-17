@@ -1,0 +1,16 @@
+# IDE files
+*.sublime-project
+*.sublime-workspace
+.vscode/*
+
+# working local files are not committed
+node_modules/*
+.gulp-cached.json
+
+# patternlab generated
+public/*
+data.json
+
+# non-pl generated
+dist/* 
+

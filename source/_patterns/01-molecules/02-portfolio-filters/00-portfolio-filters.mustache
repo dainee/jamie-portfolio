@@ -1,0 +1,17 @@
+{{#portfolioFilters}}
+<div class="portfolio-filters">
+	<ul>
+		{{#filterList}}
+		<li class="portfolio-filters__filter{{#active}} active{{/active}}{{#all}} portfolio-filters__filter-all{{/all}}{{#filterOne}} portfolio-filters__filter-one{{/filterOne}}{{#filterTwo}} portfolio-filters__filter-two{{/filterTwo}}">{{menu}}</li>
+		{{/filterList}}
+	</ul>
+	<div class="card-columns">
+		{{#imageCard}}
+		<a href="{{url}}" class="card portfolio-filters__image-{{imgClass}}">
+			<span>{{name}}</span>
+			<img alt="{{imgAlt}}" src="{{imgSrc}}"/>
+		</a>
+		{{/imageCard}}
+	</div>
+</div>
+{{/portfolioFilters}}

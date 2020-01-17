@@ -1,0 +1,7 @@
+$block: 'introduction';
+
+.#{$block} {
+	&__text {
+		width: 50%;
+	}
+}

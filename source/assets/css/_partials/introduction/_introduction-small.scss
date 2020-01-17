@@ -1,0 +1,16 @@
+$block: 'introduction';
+
+.#{$block} {
+	&__text {
+		margin: rem-calc(50) 0; 
+
+		p {
+			margin: 0;
+			font-size: fs(normal);
+		}
+
+		strong {
+			font-weight: map-get($font-weights-primary, black); // sass-lint:disable-line no-color-keywords no-color-literals
+		}
+	}
+}

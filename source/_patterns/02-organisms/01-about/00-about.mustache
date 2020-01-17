@@ -1,0 +1,20 @@
+{{#about}}
+<section class="about">
+	<div class="container">
+		{{>molecules-introduction}}
+		<div class="about__resume">
+			<a href="{{resumeLink}}" target="_blank">Download Resume</a>
+		</div>
+		<div class="about__image" style="background-image: url('{{imgUrl}}')";></div>
+		<div class="row">
+			{{#row}}
+			<div class="about__column-{{colOrder}} col-12 col-sm-{{smGrid}} col-md-{{mdGrid}}">
+				<div class="about__text">
+					{{#text}}{{{.}}}{{/text}}
+				</div>
+			</div>
+			{{/row}}
+		</div>
+	</div>
+</section>
+{{/about}}

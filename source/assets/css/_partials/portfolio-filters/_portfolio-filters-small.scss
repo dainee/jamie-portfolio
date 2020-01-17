@@ -1,0 +1,54 @@
+$block: 'portfolio-filters';
+
+.#{$block} {
+	ul {
+		@include no-custom-bullets;
+		margin-bottom: rem-calc(20);
+		padding: 0;
+		text-align: center;
+	}
+
+	&__filter {
+		display: inline-block;
+		margin-right: rem-calc(20);
+		transition: all .3s;
+		color: $color-gray;
+		font-size: fs(normal);
+		font-weight: map-get($font-weights-primary, bold);
+		cursor: pointer;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover,
+		&:active,
+		&:focus,
+		&.active {
+			color: $color-black;
+		}
+	}
+
+	&__image-one,
+	&__image-two, {
+		border: 0;
+
+		span {
+			margin-bottom: rem-calc(5);
+			color: $color-black;
+			font-weight: map-get($font-weights-primary, bold);
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+
+	.card-columns {
+		@include media-breakpoint-only(sm) {
+			column-count: 1;
+		}
+	}
+}

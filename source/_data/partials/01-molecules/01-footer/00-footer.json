@@ -1,5 +1,16 @@
 {
 	"footer": {
-		"text": "Hello World, from 00-footer."
+		"license": "@ 2020 Jamie Lee",
+		"social": [
+			{
+				"text": "LinkedIn"
+			},
+			{
+				"text": "Tumblr"
+			},
+			{
+				"text": "Instagram"
+			}
+		]
 	}
 }
