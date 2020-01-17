@@ -1,0 +1,9 @@
+$block: 'portfolio';
+
+.#{$block} {
+	margin-bottom: rem-calc(100);
+
+	&__title {
+		width: 50%;
+	}
+}

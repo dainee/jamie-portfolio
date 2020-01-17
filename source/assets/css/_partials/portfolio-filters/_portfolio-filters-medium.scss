@@ -51,4 +51,10 @@ $block: 'portfolio-filters';
 	.card {
 		margin-bottom: rem-calc(20);
 	}
+
+	.card-columns {
+		@include media-breakpoint-only(md) {
+			column-count: 2;
+		}
+	}
 }

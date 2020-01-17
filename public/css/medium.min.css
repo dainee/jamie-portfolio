@@ -59,4 +59,17 @@
 .portfolio-filters .card {
   margin-bottom: 1.25rem; }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .portfolio-filters .card-columns {
+    -webkit-column-count: 2;
+            column-count: 2; } }
+
+.portfolio {
+  margin-bottom: 4.6875rem; }
+  .portfolio__title {
+    width: 75%;
+    margin: 6.25rem 0; }
+    .portfolio__title p {
+      font-size: 1.5rem; }
+
 /*# sourceMappingURL=medium.min.css.map */

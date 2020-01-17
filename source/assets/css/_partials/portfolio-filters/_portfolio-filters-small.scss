@@ -42,6 +42,12 @@ $block: 'portfolio-filters';
 		}
 	}
 
+	.card-columns {
+		@include media-breakpoint-only(sm) {
+			column-count: 1;
+		}
+	}
+
 	.hide {
 		display: none;
 		opacity: 0;

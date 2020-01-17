@@ -1,5 +1,5 @@
 {
-	"sgCacheBuster": 1579202285140,
+	"sgCacheBuster": 1579276306272,
 	"integrating": false,
 	"url": "#",
 	"colors": [
@@ -26,13 +26,13 @@
 		"play-button",
 		"bar"
 	],
-	"linktag": {
-		"text": "This is a sample link!"
-	},
 	"button": {
 		"btnText": "Example Button",
 		"btnPrimary": true,
 		"btnSecondary": false
+	},
+	"linktag": {
+		"text": "This is a sample link!"
 	},
 	"list": {
 		"item": [
@@ -101,15 +101,15 @@
 			"label": "Another Checkbox"
 		}
 	],
-	"lazyLoadImage": {
-		"src": "../../visuals/placeholders/headshot1.png",
-		"alt": "lazy image"
-	},
 	"youtube": {
 		"youtubeId": "Wjrrgrvq1ew",
 		"iframeId": "iframeid",
 		"title": "Custom YouTube Video",
 		"alt": "Custom Youtube Video"
+	},
+	"lazyLoadImage": {
+		"src": "../../visuals/placeholders/headshot1.png",
+		"alt": "lazy image"
 	},
 	"carousel": {
 		"id": "carouselId",
@@ -187,7 +187,6 @@
 		]
 	},
 	"portfolioFilters": {
-		"text": "Hello World, from 00-portfolio-filters.",
 		"filterList": [
 			{
 				"active": true,
@@ -214,44 +213,68 @@
 		"imageCard": [
 			{
 				"imgClass": "one",
-				"imgSrc": "https://unsplash.it/600/400?random",
-				"name": "Portfolio 1"
-			},
-			{
-				"imgClass": "two",
-				"imgSrc": "https://unsplash.it/600/600?random",
-				"name": "Portfolio 2"
-			},
-			{
-				"imgClass": "two",
-				"imgSrc": "https://unsplash.it/600/500?random",
-				"name": "Portfolio 3"
+				"imgSrc": "../../visuals/placeholders/Zerowasters.png",
+				"imgAlt": "Zerowasters",
+				"name": "Zerowasters"
 			},
 			{
 				"imgClass": "one",
-				"imgSrc": "https://unsplash.it/800/400?random",
-				"name": "Portfolio 4"
+				"imgSrc": "../../visuals/placeholders/Travelapp.png",
+				"imgAlt": "Travelapp",
+				"name": "Travelapp"
 			},
 			{
 				"imgClass": "two",
-				"imgSrc": "https://unsplash.it/480/700?random",
-				"name": "Portfolio 5"
-			},
-			{
-				"imgClass": "one",
-				"imgSrc": "https://unsplash.it/680/420?random",
-				"name": "Portfolio 6"
+				"imgSrc": "../../visuals/placeholders/Depression.png",
+				"imgAlt": "Depression",
+				"name": "Depression"
 			},
 			{
 				"imgClass": "two",
-				"imgSrc": "https://unsplash.it/740/480?random",
-				"name": "Portfolio 7"
+				"imgSrc": "../../visuals/placeholders/Studio-in-the-woods.png",
+				"imgAlt": "Studio in the Woods",
+				"name": "Studio in the Woods"
 			},
 			{
 				"imgClass": "one",
-				"imgSrc": "https://unsplash.it/800/500?random",
-				"name": "Portfolio 8"
+				"imgSrc": "../../visuals/placeholders/Interecipes.png",
+				"imgAlt": "Interecipes",
+				"name": "Interecipes"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "../../visuals/placeholders/T-shirt.png",
+				"imgAlt": "T Shirt",
+				"name": "T-shirt Design"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "../../visuals/placeholders/hair-by-jaylynn.png",
+				"imgAlt": "Hair by Jaylynn",
+				"name": "Hair by Jaylynn"
+			},
+			{
+				"imgClass": "one",
+				"imgSrc": "../../visuals/placeholders/Letitgo.png",
+				"imgAlt": "Letitgo",
+				"name": "Letitgo"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "../../visuals/placeholders/LyftEats.png",
+				"imgAlt": "LyftEats",
+				"name": "LyftEats"
+			},
+			{
+				"imgClass": "two",
+				"imgSrc": "../../visuals/placeholders/FeedtheHungry.png",
+				"imgAlt": "Feed the Hungry",
+				"name": "Feed the Hungry"
 			}
 		]
+	},
+	"portfolio": {
+		"text": "Hello World, from 00-portfolio.",
+		"title": "<p>UI/UX Designer creating dynamic, impactful designs that make people's lives <strong>simple</strong>.</p>"
 	}
 }

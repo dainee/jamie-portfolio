@@ -1,0 +1,14 @@
+$block: 'portfolio';
+
+.#{$block} {
+	margin-bottom: rem-calc(75);
+
+	&__title {
+		width: 75%;
+		margin: rem-calc(100) 0;
+
+		p {
+			font-size: fs(large);
+		}
+	}
+}

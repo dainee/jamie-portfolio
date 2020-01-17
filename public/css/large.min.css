@@ -23,4 +23,9 @@ h5 {
 h6 {
   font-size: 1.125rem; }
 
+.portfolio {
+  margin-bottom: 6.25rem; }
+  .portfolio__title {
+    width: 50%; }
+
 /*# sourceMappingURL=large.min.css.map */
