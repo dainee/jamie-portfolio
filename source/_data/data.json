@@ -1,5 +1,5 @@
 {
-	"sgCacheBuster": 1579276306272,
+	"sgCacheBuster": 1579279415240,
 	"integrating": false,
 	"url": "#",
 	"colors": [
@@ -26,13 +26,13 @@
 		"play-button",
 		"bar"
 	],
+	"linktag": {
+		"text": "This is a sample link!"
+	},
 	"button": {
 		"btnText": "Example Button",
 		"btnPrimary": true,
 		"btnSecondary": false
-	},
-	"linktag": {
-		"text": "This is a sample link!"
 	},
 	"list": {
 		"item": [
@@ -273,8 +273,51 @@
 			}
 		]
 	},
+	"introduction": "<p>UI/UX Designer creating dynamic, impactful designs that make people's lives <strong>simple</strong>.</p>",
+	"about": {
+		"text": "Hello World, from 00-about.",
+		"introduction": "<p>Hi, I am <strong>Jamie Haein Lee</strong>.</p><p>A UI/UX Designer from Washington DC.</p>",
+		"imgUrl": "../../visuals/placeholders/about.png",
+		"row": [
+			{
+				"colOrder": "one",
+				"smGrid": "3",
+				"mdGrid": "2",
+				"text": "<p><strong>About</strong><p>"
+			},
+			{
+				"colOrder": "two",
+				"smGrid": "9",
+				"mdGrid": "10",
+				"text": "<p>I am a UI/UX designer with a business background, who has a unique style and eye for detail. I’m self-motivated and able to organize and prioritize workload to meet deadlines. Fluent in English and Korean.<p>"
+			},
+			{
+				"colOrder": "one",
+				"smGrid": "3",
+				"mdGrid": "2",
+				"text": "<p><strong>Experience</strong><p>"
+			},
+			{
+				"colOrder": "two",
+				"smGrid": "9",
+				"mdGrid": "10",
+				"text": "<p>FREELANCE GRAPHIC DESIGNER</p><p>Creative Circle, Jan 2019 - Present</p><br /><p>UI/UX INTERN<p><p>Prifina, Sep 2019 - December</p><br /><p>JUNIOR INTERIOR DESIGNER</p><p>Biltmore Design Galleria, 2017-2018</p>"
+			},
+			{
+				"colOrder": "one",
+				"smGrid": "3",
+				"mdGrid": "2",
+				"text": "<p><strong>Education</strong><p>"
+			},
+			{
+				"colOrder": "two",
+				"smGrid": "9",
+				"mdGrid": "10",
+				"text": "<p>CAREERFOUNDRY</p><p>Certificate in User Interface Design, 2019</p><br /><p>GEORGE MASON UNIVERSITY<p><p>BS in Management Information System, 2017</p>"
+			}
+		]
+	},
 	"portfolio": {
-		"text": "Hello World, from 00-portfolio.",
 		"title": "<p>UI/UX Designer creating dynamic, impactful designs that make people's lives <strong>simple</strong>.</p>"
 	}
 }

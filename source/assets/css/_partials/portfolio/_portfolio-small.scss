@@ -2,12 +2,4 @@ $block: 'portfolio';
 
 .#{$block} {
 	margin-bottom: rem-calc(50);
-
-	&__title {
-		margin: rem-calc(50) 0; 
-
-		p {
-			font-size: fs(normal);
-		}
-	}
 }

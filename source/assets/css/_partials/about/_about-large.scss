@@ -1,0 +1,12 @@
+$block: 'about';
+
+.#{$block} {
+	&__column-one,
+	&__column-two {
+		margin-bottom: rem-calc(40);
+	}
+
+	&__image {
+		margin: rem-calc(75) 0;
+	}
+}

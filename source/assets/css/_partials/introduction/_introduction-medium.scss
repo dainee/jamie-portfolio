@@ -1,0 +1,12 @@
+$block: 'introduction';
+
+.#{$block} {
+	&__text {
+		width: 75%;
+		margin: rem-calc(100) 0;
+
+		p {
+			font-size: fs(large);
+		}
+	}
+}

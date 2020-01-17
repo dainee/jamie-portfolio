@@ -1,0 +1,17 @@
+$block: 'about';
+
+.#{$block} {
+	&__column-one,
+	&__column-two {
+		margin-bottom: rem-calc(30);
+	}
+
+	&__image {
+		display: block;
+		margin: rem-calc(50) 0;
+	}
+
+	&__resume {
+		margin: rem-calc(10) 0 0;
+	}
+}

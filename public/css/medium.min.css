@@ -36,6 +36,7 @@
     top: 0.625rem;
     left: 0.9375rem;
     display: none;
+    margin: 0;
     color: #fff;
     z-index: 1; }
   .portfolio-filters__image:after {
@@ -66,10 +67,21 @@
 
 .portfolio {
   margin-bottom: 4.6875rem; }
-  .portfolio__title {
-    width: 75%;
-    margin: 6.25rem 0; }
-    .portfolio__title p {
-      font-size: 1.5rem; }
+
+.about__column-one, .about__column-two {
+  margin-bottom: 1.875rem; }
+
+.about__image {
+  display: block;
+  margin: 3.125rem 0; }
+
+.about__resume {
+  margin: 0.625rem 0 0; }
+
+.introduction__text {
+  width: 75%;
+  margin: 6.25rem 0; }
+  .introduction__text p {
+    font-size: 1.5rem; }
 
 /*# sourceMappingURL=medium.min.css.map */

@@ -30,8 +30,8 @@ $block: 'portfolio-filters';
 		border: 0;
 
 		span {
+			margin-bottom: rem-calc(5);
 			color: $color-black;
-			font-size: fs(normal);
 			font-weight: map-get($font-weights-primary, bold);
 		}
 

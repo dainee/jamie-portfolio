@@ -5987,8 +5987,8 @@ ol {
 .portfolio-filters__image {
   border: 0; }
   .portfolio-filters__image span {
+    margin-bottom: 0.3125rem;
     color: #000;
-    font-size: 1.125rem;
     font-weight: 500; }
   .portfolio-filters__image:hover, .portfolio-filters__image:active, .portfolio-filters__image:focus {
     text-decoration: none; }
@@ -6004,9 +6004,47 @@ ol {
 
 .portfolio {
   margin-bottom: 3.125rem; }
-  .portfolio__title {
-    margin: 3.125rem 0; }
-    .portfolio__title p {
-      font-size: 1.125rem; }
+
+.about__column-one {
+  margin-bottom: 0.625rem; }
+
+.about__column-two {
+  margin-bottom: 1.875rem; }
+
+.about__image {
+  display: none;
+  width: 100%;
+  padding-top: 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.about__resume {
+  margin: 1.25rem 0 5rem; }
+  .about__resume a {
+    color: #000;
+    font-size: 0.84375rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .about__resume a:hover, .about__resume a:active, .about__resume a:focus {
+      color: #9b9b9b;
+      text-decoration: none; }
+
+.about__text p {
+  margin: 0; }
+
+.about__text strong {
+  font-size: 1.125rem;
+  font-weight: 700; }
+
+.about .introduction__text {
+  margin-bottom: 0; }
+
+.introduction__text {
+  margin: 3.125rem 0; }
+  .introduction__text p {
+    margin: 0;
+    font-size: 1.125rem; }
 
 /*# sourceMappingURL=small.min.css.map */

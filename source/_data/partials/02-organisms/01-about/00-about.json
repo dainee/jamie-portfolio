@@ -1,0 +1,44 @@
+{
+	"about": {
+		"introduction": "<p>Hi, I am <strong>Jamie Haein Lee</strong>.</p><p>A UI/UX Designer from Washington DC.</p>",
+		"imgUrl": "../../visuals/placeholders/about.png",
+		"row": [
+			{
+				"colOrder": "one",
+				"smGrid": "3",
+				"mdGrid": "2",
+				"text": "<p><strong>About</strong><p>"
+			},
+			{
+				"colOrder": "two",
+				"smGrid": "9",
+				"mdGrid": "10",
+				"text": "<p>I am a UI/UX designer with a business background, who has a unique style and eye for detail. I’m self-motivated and able to organize and prioritize workload to meet deadlines. Fluent in English and Korean.<p>"
+			},
+			{
+				"colOrder": "one",
+				"smGrid": "3",
+				"mdGrid": "2",
+				"text": "<p><strong>Experience</strong><p>"
+			},
+			{
+				"colOrder": "two",
+				"smGrid": "9",
+				"mdGrid": "10",
+				"text": "<p>FREELANCE GRAPHIC DESIGNER</p><p>Creative Circle, Jan 2019 - Present</p><br /><p>UI/UX INTERN<p><p>Prifina, Sep 2019 - December</p><br /><p>JUNIOR INTERIOR DESIGNER</p><p>Biltmore Design Galleria, 2017-2018</p>"
+			},
+			{
+				"colOrder": "one",
+				"smGrid": "3",
+				"mdGrid": "2",
+				"text": "<p><strong>Education</strong><p>"
+			},
+			{
+				"colOrder": "two",
+				"smGrid": "9",
+				"mdGrid": "10",
+				"text": "<p>CAREERFOUNDRY</p><p>Certificate in User Interface Design, 2019</p><br /><p>GEORGE MASON UNIVERSITY<p><p>BS in Management Information System, 2017</p>"
+			}
+		]
+	}
+}

@@ -25,7 +25,14 @@ h6 {
 
 .portfolio {
   margin-bottom: 6.25rem; }
-  .portfolio__title {
-    width: 50%; }
+
+.about__column-one, .about__column-two {
+  margin-bottom: 2.5rem; }
+
+.about__image {
+  margin: 4.6875rem 0; }
+
+.introduction__text {
+  width: 50%; }
 
 /*# sourceMappingURL=large.min.css.map */

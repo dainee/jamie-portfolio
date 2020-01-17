@@ -1,12 +1,8 @@
 {{#portfolio}}
-<div class="portfolio">
+<section class="portfolio">
 	<div class="container">
-		{{#title}}
-		<div class="portfolio__title">
-			{{{.}}}
-		</div>
-		{{/title}}
+		{{>molecules-introduction}}
 		{{>molecules-portfolio-filters}}
 	</div>
-</div>
+</section>
 {{/portfolio}}
