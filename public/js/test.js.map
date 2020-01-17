@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../source/assets/js/vendor.js","../../source/assets/js/test2.js"],"names":[],"mappings":"AAAA;AACA;ACDA;AACA","file":"test.js","sourcesContent":["// TODO: Remove this file, it's just an example\nconsole.log( 'this is vendor.js' );","// TODO: Remove this file, it's just an example\nconsole.log( 'this is test2.js' ); // eslint-disable-line no-console"]}
