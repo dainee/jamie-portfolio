@@ -11,6 +11,7 @@ $block: 'portfolio-filters';
 	&__filter {
 		display: inline-block;
 		margin-right: rem-calc(20);
+		transition: all .3s;
 		color: $color-gray;
 		font-size: fs(normal);
 		font-weight: map-get($font-weights-primary, bold);
@@ -20,8 +21,10 @@ $block: 'portfolio-filters';
 			margin-right: 0;
 		}
 
+		&:hover,
+		&:active,
+		&:focus,
 		&.active {
-			transition: all .3s;
 			color: $color-black;
 		}
 	}
@@ -51,5 +54,6 @@ $block: 'portfolio-filters';
 	.hide {
 		display: none;
 		opacity: 0;
+		transition: all 0.5s ease;
 	}
 }

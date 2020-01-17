@@ -5938,7 +5938,7 @@ ol {
 
 .footer {
   padding: 0.9375rem 0;
-  border-top: 0.0625rem solid #d8d8d8;
+  border-top: 0.0625rem solid #e5e5e5;
   color: #4a4a4a;
   font-family: "Poppins", sans-serif;
   font-size: 0.84375rem;
@@ -5972,16 +5972,16 @@ ol {
 .portfolio-filters__filter {
   display: inline-block;
   margin-right: 1.25rem;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
   color: #9b9b9b;
   font-size: 1.125rem;
   font-weight: 500;
   cursor: pointer; }
   .portfolio-filters__filter:last-child {
     margin-right: 0; }
-  .portfolio-filters__filter.active {
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+  .portfolio-filters__filter:hover, .portfolio-filters__filter:active, .portfolio-filters__filter:focus, .portfolio-filters__filter.active {
     color: #000; }
 
 .portfolio-filters__image {
@@ -6000,7 +6000,10 @@ ol {
 
 .portfolio-filters .hide {
   display: none;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .portfolio {
   margin-bottom: 3.125rem; }
@@ -6046,5 +6049,7 @@ ol {
   .introduction__text p {
     margin: 0;
     font-size: 1.125rem; }
+  .introduction__text strong {
+    font-weight: 700; }
 
 /*# sourceMappingURL=small.min.css.map */
