@@ -10,7 +10,8 @@ $block: 'portfolio-filters';
 		margin-right: rem-calc(40);
 	}
 
-	&__image {
+	&__image-one,
+	&__image-two {
 		position: relative;
 
 		span {

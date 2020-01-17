@@ -29,7 +29,8 @@ $block: 'portfolio-filters';
 		}
 	}
 
-	&__image {
+	&__image-one,
+	&__image-two, {
 		border: 0;
 
 		span {
@@ -49,11 +50,5 @@ $block: 'portfolio-filters';
 		@include media-breakpoint-only(sm) {
 			column-count: 1;
 		}
-	}
-
-	.hide {
-		display: none;
-		opacity: 0;
-		transition: all 0.5s ease;
 	}
 }
