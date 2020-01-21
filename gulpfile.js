@@ -1,7 +1,3 @@
-// TODO: Adjust the "Front-End Baseline" text in the README and configs/README (both on line 1) to the current project name
-// TODO: Adjust the "live demo" & hosted links in the README (lines 5, 275, 281) to point to the correct URL for the project
-// TODO: Adjust the "login info" link in the README (line 5) to point to the Confluence page with the username/password
-
 /* global process, Buffer, Promise */
 /* eslint no-console: 0 */
 'use strict';
