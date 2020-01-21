@@ -1,0 +1,23 @@
+{{#portfolioSingle}}
+<div class="portfolio-single">
+	<div class="container">
+		<div class="portfolio-single__top">
+			<h1 class="portfolio-single__title">{{projectTitle}}</h1>
+			<p class="portfolio-single__type">{{projectType}}</p>
+		</div>
+		<div class="portfolio-single__content">
+			<img alt="{{projectTitle}}" src="{{imgSrc}}">
+		</div>
+		<div class="portfolio-single__bottom">
+			{{#prevOrNext}}
+			<a href="{{url}}">
+				<p>
+					<span>{{prevOrNextText}}</span>
+					{{projectTitle}}
+				</p>
+			</a>
+			{{/prevOrNext}}
+		</div>
+	</div>
+</div>
+{{/portfolioSingle}}

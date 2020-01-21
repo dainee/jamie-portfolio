@@ -280,18 +280,3 @@
 		}
 	}
 }
-
-// For the object-fit-images polyfill (https://www.npmjs.com/package/object-fit-images)
-// To use, add @include object-fit(); to the classes/selectors that need a polyfill
-// To adjust the position, add the fit & position parameters, i.e. @include object-fit(contain, center);
-// TODO: Remove the object-fit mixin if not needed
-@mixin object-fit($fit: cover, $position: null) {
-	object-fit: $fit;
-
-	@if( $position ) {
-		font-family: 'object-fit: #{$fit}; object-position: #{$position}';
-		object-position: $position;
-	} @else {
-		font-family: 'object-fit: #{$fit}';
-	}
-}

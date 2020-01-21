@@ -1,10 +1,4 @@
-# Front-End Baseline
-
-A simple starting point project for front-end development.  It is platform agnostic and includes Bootstrap 4.  It compiles scss and js into production-ready files.
-
-[**Live demo**](https://patternlab.aws.reingoldms.com/) - [**login info**](https://reingold-tech.atlassian.net/wiki/spaces/TechDocs/pages/528777246/PatternLab)
-
-[TOC]
+# Jamie's Portfolio Website
 
 ## Setup
 
