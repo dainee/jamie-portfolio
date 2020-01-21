@@ -9,6 +9,7 @@ $block: 'portfolio-single';
 
 		a {
 			color: $color-black;
+			font-size: fs(normal);
 			font-weight: map-get($font-weights-primary, black); // sass-lint:disable-line no-color-keywords no-color-literals
 
 			&:last-child { // sass-lint:disable-line nesting-depth
