@@ -1,6 +1,7 @@
 $block: 'portfolio-single';
 
 .#{$block} {
+	$icon-size: rem-calc(10);
 	padding: rem-calc(15) 0 rem-calc(30);
 
 	&__bottom {
@@ -19,6 +20,7 @@ $block: 'portfolio-single';
 			&:hover, // sass-lint:disable-line nesting-depth
 			&:focus,
 			&:active {
+				color: $color-gray-dark;
 				text-decoration: none;
 			}
 		}
@@ -27,6 +29,25 @@ $block: 'portfolio-single';
 			display: block;
 			font-size: fs(small);
 			font-weight: map-get($font-weights-primary, normal);
+		}
+	}
+
+	&__arrow-prev {
+		&:before {
+			@include icon-base;
+			@include icon('arrow', $icon-size, $color-black);
+			margin-right: rem-calc(5);
+			transform: rotate(180deg);
+			content: '';
+		}
+	}
+
+	&__arrow-next {
+		&:after {
+			@include icon-base;
+			@include icon('arrow', $icon-size, $color-black);
+			margin-left: rem-calc(5);
+			content: '';
 		}
 	}
 

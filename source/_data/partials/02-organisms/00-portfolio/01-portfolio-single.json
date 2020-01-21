@@ -5,10 +5,12 @@
 		"imgSrc": "../../visuals/placeholders/Studio-in-the-woods.png",
 		"prevOrNext": [
 			{
+				"direction": "prev",
 				"prevOrNextText": "Previous Project",
 				"projectTitle": "Depression"
 			},
 			{
+				"direction": "next",
 				"prevOrNextText": "Next Project",
 				"projectTitle": "Interecipes"
 

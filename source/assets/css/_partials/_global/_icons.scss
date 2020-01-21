@@ -30,7 +30,8 @@ $icon-svg-padding: 50;
 		checkbox:		(size: 30px, path: '<path fill="#{$color}" stroke="#{$stroke-color}" stroke-width="#{$stroke-width}" d="M282,612c-75.9-75.5-154.5-153.8-232-231c18.5-18.5,37.3-37.3,55.4-55.7c57.8,57.8,116.5,116.9,175.3,175.7C403.4,378.2,524,258,643.6,138c21.2,21.2,39.6,39.6,56,56.4C560.9,332.8,421.1,472.9,282,612z"/>'),
 		radio-button:	(size: 30px, path: '<path fill="#{$color}" stroke="#{$stroke-color}" stroke-width="#{$stroke-width}" d="M375,50C195.5,50,50,195.5,50,375s145.5,325,325,325s325-145.5,325-325S554.5,50,375,50C375,50,375,50,375,50z"/>'),
 		play-button:	(size: 30px, path: '<path fill="#{$color}" stroke="#{$stroke-color}" stroke-width="#{$stroke-width}" d="M157.63 368.05v288.1l4.3-2.5c19.5-11.4 414.4-239.2 449.4-259.3 33.9-19.4 44.8-26.2 44-27-.7-.7-74.3-43.4-163.7-94.9-89.4-51.6-200.1-115.5-246-142s-84.5-48.7-85.7-49.4l-2.3-1.2v288.2z"/>'),
-		bar:			(size: 30px, path: '<path fill="#{$color}" stroke="#{$stroke-color}" stroke-width="#{$stroke-width}" d="M63.2 513.6h623.5v69.3H63.2zM63.2 340.4h623.5v69.3H63.2zM63.2 167.2h623.5v69.3H63.2z"/>')
+		bar:			(size: 30px, path: '<path fill="#{$color}" stroke="#{$stroke-color}" stroke-width="#{$stroke-width}" d="M63.2 513.6h623.5v69.3H63.2zM63.2 340.4h623.5v69.3H63.2zM63.2 167.2h623.5v69.3H63.2z"/>'),
+		arrow:			(size: 25px, path: '<path fill="#{$color}" stroke="#{$stroke-color}" stroke-width="#{$stroke-width}" d="M375.5 63l-54.7 54.7 218.8 218.7H63v78.2h476.6L320.8 633.3l54.7 54.7L688 375.5z"/>')
 	);
 
 	@return $icons;
