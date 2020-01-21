@@ -1,0 +1,18 @@
+{
+	"portfolioSingle": {
+		"projectTitle": "Studio In The Woods",
+		"projectType": "Others",
+		"imgSrc": "../../visuals/placeholders/Studio-in-the-woods.png",
+		"prevOrNext": [
+			{
+				"prevOrNextText": "Previous Project",
+				"projectTitle": "Depression"
+			},
+			{
+				"prevOrNextText": "Next Project",
+				"projectTitle": "Interecipes"
+
+			}
+		]
+	}
+}

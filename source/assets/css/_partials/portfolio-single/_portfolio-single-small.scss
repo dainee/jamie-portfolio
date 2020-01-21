@@ -1,0 +1,54 @@
+$block: 'portfolio-single';
+
+.#{$block} {
+	padding: rem-calc(15) 0 rem-calc(30);
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+
+		a {
+			color: $color-black;
+			font-weight: map-get($font-weights-primary, black); // sass-lint:disable-line no-color-keywords no-color-literals
+
+			&:last-child { // sass-lint:disable-line nesting-depth
+				text-align: right;
+			}
+
+			&:hover, // sass-lint:disable-line nesting-depth
+			&:focus,
+			&:active {
+				text-decoration: none;
+			}
+		}
+
+		span {
+			display: block;
+			font-size: fs(small);
+			font-weight: map-get($font-weights-primary, normal);
+		}
+	}
+
+	&__content {
+		margin: rem-calc(30) 0;
+		text-align: center;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__top {
+		text-align: center;
+	}
+
+	&__title {
+		font-family: $font-family-primary;
+		font-size: fs(large);
+		font-weight: map-get($font-weights-primary, black); // sass-lint:disable-line no-color-keywords no-color-literals
+	}
+
+	&__type {
+		text-transform: uppercase;
+	}
+}

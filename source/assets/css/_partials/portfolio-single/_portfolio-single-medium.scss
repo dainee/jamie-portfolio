@@ -1,0 +1,14 @@
+$block: 'portfolio-single';
+
+.#{$block} {
+	padding: rem-calc(30) 0 rem-calc(60);
+
+	&__content {
+		margin: rem-calc(60) 0;
+	}
+
+	&__title {
+		margin-bottom: rem-calc(15);
+		font-size: fs(larger);
+	}
+}
