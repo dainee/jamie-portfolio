@@ -13,6 +13,7 @@
 		"checkbox",
 		"radio-button",
 		"play-button",
-		"bar"
+		"bar",
+		"arrow"
 	]
 }
