@@ -4,6 +4,27 @@ $block: 'portfolio-single';
 	$icon-size: rem-calc(10);
 	padding: rem-calc(15) 0 rem-calc(30);
 
+	&__arrow-prev {
+		&:before {
+			@include icon-base;
+			@include icon('arrow', $icon-size, $color-black);
+			margin-right: rem-calc(5);
+			transform: rotate(180deg);
+			transition: all .3s;
+			content: '';
+		}
+	}
+
+	&__arrow-next {
+		&:after {
+			@include icon-base;
+			@include icon('arrow', $icon-size, $color-black);
+			margin-left: rem-calc(5);
+			transition: all .3s;
+			content: '';
+		}
+	}
+
 	&__bottom {
 		display: flex;
 		justify-content: space-between;
@@ -17,37 +38,32 @@ $block: 'portfolio-single';
 				text-align: right;
 			}
 
-			&:hover, // sass-lint:disable-line nesting-depth
+			// sass-lint:disable nesting-depth
+			&:hover,
 			&:focus,
 			&:active {
-				color: $color-gray-dark;
+				color: $color-gray;
 				text-decoration: none;
+
+				.#{$block}__arrow-prev {
+					&:before {
+						@include icon('arrow', $icon-size, $color-gray);
+					}
+				}
+
+				.#{$block}__arrow-next {
+					&:after {
+						@include icon('arrow', $icon-size, $color-gray);
+					}
+				}
 			}
+			// sass-lint:enable nesting-depth
 		}
 
 		span {
 			display: block;
 			font-size: fs(small);
 			font-weight: map-get($font-weights-primary, normal);
-		}
-	}
-
-	&__arrow-prev {
-		&:before {
-			@include icon-base;
-			@include icon('arrow', $icon-size, $color-black);
-			margin-right: rem-calc(5);
-			transform: rotate(180deg);
-			content: '';
-		}
-	}
-
-	&__arrow-next {
-		&:after {
-			@include icon-base;
-			@include icon('arrow', $icon-size, $color-black);
-			margin-left: rem-calc(5);
-			content: '';
 		}
 	}
 
@@ -60,14 +76,14 @@ $block: 'portfolio-single';
 		}
 	}
 
-	&__top {
-		text-align: center;
-	}
-
 	&__title {
 		font-family: $font-family-primary;
 		font-size: fs(large);
 		font-weight: map-get($font-weights-primary, black); // sass-lint:disable-line no-color-keywords no-color-literals
+	}
+
+	&__top {
+		text-align: center;
 	}
 
 	&__type {
