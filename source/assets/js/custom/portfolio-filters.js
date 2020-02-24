@@ -10,18 +10,27 @@
 		filterAll.on( 'click', function() {
 			imageOne.show( 'slow' );
 			imageTwo.show( 'slow' );
+			filterAll.addClass( 'active' );
+			filterOne.removeClass( 'active' );
+			filterTwo.removeClass( 'active' );
 		} );
 
 		// Show UI/UX portfolio
 		filterOne.on( 'click', function() {
 			imageOne.show( 'slow' );
 			imageTwo.hide( 'slow' );
+			filterAll.removeClass( 'active' );
+			filterOne.addClass( 'active' );
+			filterTwo.removeClass( 'active' );
 		} );
 
 		// Show others
 		filterTwo.on( 'click', function() {
 			imageOne.hide( 'slow' );
 			imageTwo.show( 'slow' );
+			filterAll.removeClass( 'active' );
+			filterOne.removeClass( 'active' );
+			filterTwo.addClass( 'active' );
 		} );
 	} );
 } )( jQuery );
