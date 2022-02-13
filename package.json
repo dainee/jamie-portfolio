@@ -2,7 +2,7 @@
   "name": "front-end-baseline",
   "description": "A simple starting point project for front-end development.  It is platform agnostic and does not include any frameworks.  It compiles scss and js into production-ready files.",
   "dependencies": {
-    "ajv": "^5.5.2",
+    "ajv": "^6.12.3",
     "bootstrap": "^4.1.3",
     "browser-sync": "^2.23.6",
     "chalk": "^2.3.2",
